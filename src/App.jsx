@@ -1,18 +1,19 @@
 // import { useState } from 'react'
 import './App.css'
-import Nav from './component/Nav'
-import About from './component/About'
-import Footer from './component/Footer'
-import List from './component/list'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Homepage from './homepage'
+import Map from './map';
 function App() {
-  // const [count, setCount] = useState(0)
+  
 
   return (
     <>
-      <Nav/>
-      <About/>
-      <List/>
-      <Footer/>
+       <Router>
+        <Routes>
+          <Route path='/' element={<Homepage></Homepage>} ></Route>
+          <Route path='/map' element={<Map></Map>} ></Route>
+        </Routes>
+       </Router>
     </>
   )
 }

@@ -3,11 +3,14 @@ import About from './component/About'
 import Footer from './component/Footer'
 import List from './component/List'
 
+// import { Video } from './component/Video'
+
 function Homepage() {
     return <>
-     <Nav/>
+      <Nav/>
       <About/>
       <List/>
+      {/* <Video/> */}
       <Footer/>
     </>
 }
